@@ -126,7 +126,7 @@ a:active {
   $btn-color-dark: shade($btn-color, 40%);
 	color: tint($btn-color);
 
-  span {
+  button {
     @include absolute();
     display: block;
     @include size(0);
@@ -140,7 +140,7 @@ a:active {
   &:hover {
     color: tint($btn-color, 75%);
 
-    span {
+    button {
       @include size(225%, $btn-width*2.25);
     }
   }
