@@ -138,7 +138,7 @@ a:active {
   }
 
   &:hover {
-    color: tint($btn-color, 75%);
+    color: tint(btn-color, 75%);
 
     span {
       include size(225%, btn-width*2.25);
