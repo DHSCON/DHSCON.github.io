@@ -3,7 +3,7 @@ function dconHome() {
     var Description = "Work in Progress...";
 	document.getElementById("ClubName").innerHTML = Title;
     document.getElementById("Description").innerHTML = Description;
-
+	
 
 }
 
@@ -17,7 +17,7 @@ function baseball() {
     var Title = "Boys Baseball";
     var Description = "";
     document.getElementById("ClubName").innerHTML = Title;
-
+	
 }
 
 function boysBasketball() {
