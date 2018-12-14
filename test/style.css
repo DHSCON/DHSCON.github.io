@@ -72,7 +72,7 @@ h1 {
 .clublink {
     margin: auto;
     height: 45px;
-    font-size: 1em;
+    font-size: 0.9em;
     word-wrap: break-word;
     color: green;
     width:100%;
@@ -82,7 +82,7 @@ h1 {
 .clublink-content {
   display: none;
   position: absolute;
-  min-width: 160px;
+  width:19.5%;
   z-index: 1;
 }
 .clublink:hover{
