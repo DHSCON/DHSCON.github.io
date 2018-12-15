@@ -85,13 +85,8 @@ h1 {
   color: green;
   width: 100%;
   background-color: #ddd;
-  border: 2px #999;
-  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 26.4px;
+  border: 2px font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  ;
 }
 
 .clublink-content {
