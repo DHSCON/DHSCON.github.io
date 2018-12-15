@@ -72,12 +72,12 @@ h1 {
 .clublink {
     margin: auto;
     height: 45px;
-    font-size: 0.9em;
+    font-size: 0.7em;
     word-wrap: break-word;
     color: green;
     width:100%;
-	background-color: #ddd;
-	border:2px #999;
+	  background-color: #ddd;
+	  border:2px #999;
 }
 .clublink-content {
   display: none;
