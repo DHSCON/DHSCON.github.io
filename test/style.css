@@ -86,6 +86,7 @@ h1 {
   width: 100%;
   background-color: #ddd;
   border: 2px;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
 .clublink-content {
@@ -108,7 +109,6 @@ h1 {
 
 .clubButtons {
   padding-top: 10px;
-  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
 a:link {
