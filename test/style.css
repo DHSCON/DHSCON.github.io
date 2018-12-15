@@ -1,84 +1,75 @@
 h1 {
-  font-family: verdana;
-  font-size: 62px;
-  color: white;
-  margin: auto;
-  padding-top: 100px;
-  padding-left: 50px;
+    font-family: verdana;
+    font-size: 62px;
+    color: white;
+    margin: auto;
+    padding-top: 100px;
+    padding-left: 50px;
 }
-
 .pagebackground {
-  position: relative;
-  width: 100%;
-  min-width: 1025px;
-  margin: auto;
-  height: 100%;
-  background: linear-gradient(green, white)
+    position: relative;
+    width:100%;
+    min-width: 1025px;
+    margin: auto;
+    height: 100%;
+    background: linear-gradient(green, white)
 }
-
 .header {
-  background-image: url("waveyBoi.png");
-  margin: auto -30px;
-  top: -200px;
-  bottom: 0px;
-  position: relative;
-  width: 1050px;
-  height: 418px;
+    background-image: url("waveyBoi.png");
+    margin: auto -30px;
+    top: -200px;
+    bottom: 0px;
+    position: relative;
+    width: 1050px;
+    height: 418px;
 }
-
 .textfield {
-  background-color: #d6d6d6;
-  margin: auto;
-  top: 200px;
-  bottom: 200px;
-  width: 1000px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  border: 5px solid #000000;
-  border-bottom: 0px;
-  border-radius: 10px;
+    background-color: #d6d6d6;
+    margin: auto;
+    top: 200px;
+    bottom: 200px;
+    width: 1000px;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    border: 5px solid #000000;
+	border-bottom: 0px;
+    border-radius: 10px;
 }
-
 .navigation {
-  position: fixed;
-  background-color: #999999;
-  margin: 25px;
-  top: -200px;
-  bottom: 25px;
-  width: 950px;
-  position: relative;
-  height: 65px;
-  border: 0px;
-  border-radius: 5px;
+    position: fixed;
+    background-color: #999999;
+    margin: 25px;
+    top: -200px;
+    bottom: 25px;
+    width: 950px;
+    position: relative;
+    height: 65px;
+    border: 0px;
+    border-radius: 5px;
 }
-
 .content {
-  margin: auto;
-  width: 950px;
-  top: -200px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-height: 100px;
-  border: 0px;
+    margin: auto;
+    width: 950px;
+    top: -200px;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    min-height: 100px;
+    border: 0px;
 }
-
 #ClubName {
-  color: green;
-  text-align: center;
-  font-family: verdana;
-  font-size: 30px;
-  font-weight: bold;
+    color: green;
+    text-align: center;
+    font-family: verdana;
+    font-size: 30px;
+    font-weight: bold;
 }
-
 #Description {
-  font-size: 25;
-  font-family: times new roman;
+    font-size:25;
+    font-family:times new roman;
 }
-
 .clublink {
-<<<<<<< HEAD
     margin: auto;
     height: 45px;
     font-size: 0.7em;
@@ -87,86 +78,63 @@ h1 {
     width:100%;
 	  background-color: #ddd;
 	  border:2px #999;
+    border: 0 none !important;
 }
-=======
-  margin: auto;
-  height: 45px;
-  font-size: 0.9em;
-  word-wrap: break-word;
-  color: green;
-  width: 100%;
-  background-color: #ddd;
-  border: 2px;
-  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  font-weight: bold;
-}
-
->>>>>>> 7739457d0c29f2116a309e468033d0fd19665107
 .clublink-content {
   display: none;
   position: absolute;
-  width: 19.5%;
+  width:19.5%;
   z-index: 1;
 }
-
-.clublink:hover {
-  background-color: green;
-  color: white;
+.clublink:hover{
+    background-color: green;
+    color: white;
 }
-
-.clublink:hover .clublink-content {
-  background-color: #ffffff;
-  color: white;
-  display: block;
+.clublink:hover .clublink-content{
+    background-color: #ffffff;
+    color: white;
+    display: block;
 }
-
 .clubButtons {
-  padding-top: 10px;
+	padding-top: 10px;
 }
-
 a:link {
-  text-decoration: none;
-  color: green;
+    text-decoration: none;
+	color: green;
 }
-
 a:visited {
-  text-decoration: none;
+    text-decoration: none;
 }
-
 a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
-
 a:active {
-  text-decoration: none;
+    text-decoration: none;
 }
-
 .footerA {
-  background-color: green;
-  height: 150px;
-  width: 1020px;
-  margin: auto -10px;
-  border: 0px;
-  border-radius: 10px;
+	background-color:green;
+	height:150px;
+	width:1020px;
+	margin:auto -10px;
+	border:0px;
+	border-radius:10px;
 }
-
 .footerB {
-  background-color: darkgreen;
-  height: 15px;
-  width: 1020px;
-  position: relative;
-  margin: auto;
-  border: 0px;
-  border-radius: 10px;
+	background-color:darkgreen;
+	height:15px;
+	width:1020px;
+	position: relative;
+	margin:auto;
+	border:0px;
+	border-radius:10px;
 }
-
 .footerC {
-  background-color: #d6d6d6;
-  height: 10px;
-  width: 1000px;
-  margin: auto;
-  border: 0px;
-  position: relative;
-  border: 0px;
-  border-radius: 0px 0px 5px 5px;
+	background-color: #d6d6d6;
+	height:10px;
+	width:1000px;
+	margin:auto;
+	border:0px;
+	position: relative;
+	border: 0px;
+	border-radius: 0px 0px 5px 5px;
 }
