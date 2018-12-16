@@ -44,7 +44,7 @@ h1 {
     bottom: 25px;
     width: 950px;
     position: relative;
-    height: 65px;
+    height: 52px;
     border: 0px;
     border-radius: 5px;
 }
@@ -72,19 +72,22 @@ h1 {
 .clublink {
     margin: auto;
     height: 45px;
-    font-size: 0.7em;
+    font-size: 0.85em;
     word-wrap: break-word;
+    font-weight: 900;
     color: green;
-    width:100%;
+    width: 100%;
 	  background-color: #ddd;
-	  border:2px #999;
+	  border:2px;
     border: 0 none !important;
 }
 .clublink-content {
   display: none;
   position: absolute;
-  width:19.5%;
+  top: 50px;
+  width: 16.2%;
   z-index: 1;
+  font-weight: 900;
 }
 .clublink:hover{
     background-color: green;
@@ -95,8 +98,50 @@ h1 {
     color: white;
     display: block;
 }
+
+.clubsublink {
+  margin: auto;
+  height: 45px;
+  font-size: 1em;
+  word-wrap: break-word;
+  font-weight: 900;
+  color: green;
+  width: 100%;
+  background-color: #ddd;
+  border:2px;
+  border: 0 none !important;
+}
+
+.clublink-subcontent {
+display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  z-index: 1;
+  margin: 5px;
+  font-weight: 900;
+  word-wrap: break-word;
+
+}
+.clubsublink:hover{
+    background-color: green;
+    color: white;
+    font-weight: 900;
+    word-wrap: break-word;
+}
+.clubsublink:hover .clublink-subcontent{
+    background-color: #ffffff;
+    color: white;
+    display: block;
+    font-weight: 900;
+    word-wrap: break-word;
+}
+
+
 .clubButtons {
-	padding-top: 10px;
+	padding: 10px;
+
 }
 a:link {
     text-decoration: none;
