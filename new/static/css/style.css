@@ -80,20 +80,20 @@ h1 {
 .clublink {
   margin: auto;
   height: 45px;
-  font-size: 0.85em;
+
   word-wrap: break-word;
   font-weight: 900;
   color: green;
   width: 100%;
   background-color: #ddd;
   border: 2px;
-  border: 0 none !important;
+
 }
 
 
+
 .clublink:hover .clublink-content {
-  background-color: #ffffff;
-  color: white;
+
   display: block;
   font-weight: 900;
   word-wrap: break-word;
@@ -102,11 +102,23 @@ h1 {
 .clublink-content {
   display: none;
   position: absolute;
-  top: 50px;
-  width: 16.2%;
+  top: 47px;
+  width: 16.25%;
   z-index: 1;
   font-weight: 900;
 }
+
+.clublink:hover{
+color: white;
+background-color: green;
+}
+
+.clublink:onclick .clublink{
+display: none;
+color: white;
+background-color: green;
+}
+
 
 .clubsublink {
   margin: auto;
@@ -127,8 +139,10 @@ h1 {
   top: 0;
   left: 100%;
   width: 100%;
+  border: 4px solid;
   z-index: 1;
-  margin: 5px;
+  border-color: green;
+
   font-weight: 900;
   word-wrap: break-word;
 }
