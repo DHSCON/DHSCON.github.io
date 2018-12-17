@@ -211,3 +211,12 @@ a:active {
 	border: 0px;
 	border-radius: 0px 0px 5px 5px;
 }
+
+#socialmedia {
+	position: relative;
+	float: right;
+	padding: 20px;
+  font-size: 40px;
+  width: 50px;
+	color: white;
+}
