@@ -129,6 +129,7 @@ h1 {
 	background-color: #ddd;
 	border: 2px;
 	border: 0 none !important;
+	position: relative;
 }
 
 .clublink-subcontent {
