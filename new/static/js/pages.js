@@ -255,7 +255,8 @@ function keyClub() {
 
 function mathTeam() {
     var Title = "Math Team";
-    var Description = "<p align=\"center\">Tri-State Math League</p><br>";
+	var line1 = "<p align=\"center\">Tri-State Math League</p><br>";
+    var Description = line1;
     document.getElementById("ClubName").innerHTML = Title;
 	document.getElementById("Description").innerHTML = Description;
 }
