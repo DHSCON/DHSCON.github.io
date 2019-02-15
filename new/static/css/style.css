@@ -232,3 +232,6 @@ a:active {
 	height:100%;
 	width:30%;
 }
+#getText{
+	visibility: hidden;
+}
