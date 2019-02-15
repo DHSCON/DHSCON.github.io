@@ -3,7 +3,9 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <title>Dover Community Outreach Network</title>
+  <script src="../app/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="../static/js/pages.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../static/js/control.js" type="text/javascript" charset="utf-8"></script>
   <link href="../static/css/style.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
@@ -189,20 +191,11 @@
               </div>
             </th>
 
-            <th width="16.66%">
-              <div class="clublink">
-                <span>
-                  <p class="clubButtons">Other category we need</p>
-                </span>
-                <div class="clublink-content">
-                  <button onclick="()" class="clublink"></button><br>
-                  <button onclick="()" class="clublink"></button><br>
-                  <button onclick="()" class="clublink"></button><br>
-                  <button onclick="()" class="clublink"></button><br>
-                  <button onclick="()" class="clublink"></button><br>
-                  <button onclick="()" class="clublink"></button><br>
-                </div>
-              </div>
+			<th width="16.66%">
+				<div class="clublink">
+					<input id="search" placeholder="Search..?"></input>
+					<button id="submit">Go</button>
+				</div>
             </th>
           </tr>
         </table>

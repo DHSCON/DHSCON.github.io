@@ -223,3 +223,12 @@ a:active {
   width: 50px;
 	color: white;
 }
+
+#search{
+	height: 90%;
+	width: 60%;
+}
+#submit{
+	height:100%;
+	width:30%;
+}
