@@ -1,6 +1,6 @@
 body {
 	background-image: linear-gradient(green, white);
-	background-repeat: no-repeat;
+	background-repeat: repeat-x
 }
 h1 {
 	font-family: verdana;
@@ -234,4 +234,9 @@ a:active {
 }
 #getText{
 	visibility: hidden;
+}
+#ucBanner{
+	width:900px;
+	height:333px;
+	margin: auto;
 }

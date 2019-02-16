@@ -10,7 +10,6 @@ $(document).ready(function(){
 				searchArr.splice(i,1);
 			//positive	
 			}else{
-				console.log(searchArr[i]);
 				function Title(str){
 					let getTitle = str;
 					getTitle=getTitle.substring(getTitle.search("Title")+9);
@@ -20,7 +19,7 @@ $(document).ready(function(){
 				function description(str){
 					let getDes = str;
 					getDes=getDes.substring(getDes.search("Description")+15);
-					getDes = getDes.substring(0, getDes.search("\""));
+					getDes = getDes.substring(0, getDes.search("\`"));
 					return getDes;
 				}
 				function getFunc(str){
@@ -40,9 +39,10 @@ $(document).ready(function(){
 		searchArr.shift();
 		console.log(positive)
 		$("#ClubName").text("Search Results:")
+		$("#Description").text("")
 		for(let i=0;i<positive.length;i++){
-			$(".content").append(`<div id=\"searchResult${i}\"><\/div>`);
-			$(`#searchResult${i}`).append(`<a onclick=\"${positive[i].function}\" href=\"#\">${positive[i].title}<\/a>`)
+			$("#Description").append(`<div id=\"searchResult${i}\"><\/div>`);
+			$(`#searchResult${i}`).append(`<a onclick=\"${positive[i].function}\" href=\"#\">${positive[i].title}<\/a><br>`)
 		}
 	}
 
