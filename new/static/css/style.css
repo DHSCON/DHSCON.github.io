@@ -219,8 +219,8 @@ a:active {
 	position: relative;
 	float: right;
 	padding: 20px;
-  font-size: 40px;
-  width: 50px;
+	font-size: 40px;
+	width: 50px;
 	color: white;
 }
 
@@ -239,4 +239,11 @@ a:active {
 	width:900px;
 	height:333px;
 	margin: auto;
+}
+.result{
+	margin:1em;
+}
+.searchDes{
+	margin-left: 2em;
+	font-size: 1em;
 }

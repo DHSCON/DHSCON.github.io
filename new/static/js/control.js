@@ -20,6 +20,15 @@ $(document).ready(function(){
 					let getDes = str;
 					getDes=getDes.substring(getDes.search("Description")+15);
 					getDes = getDes.substring(0, getDes.search("\`"));
+					//strip html tags
+					function strip_html_tags(str){
+					   if ((str===null) || (str===''))
+						   return false;
+					  else
+					   str = str.toString();
+					  return str.replace(/<[^>]*>/g, '');
+					}
+					getDes = strip_html_tags(getDes)
 					return getDes;
 				}
 				function getFunc(str){
@@ -38,11 +47,18 @@ $(document).ready(function(){
 		}
 		searchArr.shift();
 		console.log(positive)
+		
 		$("#ClubName").text("Search Results:")
 		$("#Description").text("")
+		if(positive==0){
+			$("#Description").append("No Results Found")
+		}
 		for(let i=0;i<positive.length;i++){
-			$("#Description").append(`<div id=\"searchResult${i}\"><\/div>`);
-			$(`#searchResult${i}`).append(`<a onclick=\"${positive[i].function}\" href=\"#\">${positive[i].title}<\/a><br>`)
+			$("#Description").append(`<div id=\"searchResult${i}\" class=\"result\"><\/div>`);
+			$(`#searchResult${i}`).append(`
+				<a onclick=\"${positive[i].function}\" href=\"#\">${positive[i].title}<\/a><br>
+				<div class="searchDes">${positive[i].description}</div>
+			`)
 		}
 	}
 

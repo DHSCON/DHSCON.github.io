@@ -2,7 +2,7 @@ let text = `
 function dconHome() {
     var Title = "Dover Community Outreach Network";
 	var tags = [];
-    var Description = \`Work in Progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
 	$("#ClubName").text(Title);
    	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -11,7 +11,7 @@ function dconHome() {
 function cyberPatriot(){
     var Title = "Cyber Patriot Club"
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -20,7 +20,7 @@ function cyberPatriot(){
 function baseball() {
     var Title = "Boys Baseball";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -30,7 +30,7 @@ function baseball() {
 function boysBasketball() {
     var Title = "Boys Basketball";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
 	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -39,7 +39,7 @@ function boysBasketball() {
 function boysFootball() {
     var Title = "Boys Football";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -48,7 +48,7 @@ function boysFootball() {
 function boysLacrosse() {
     var Title = "Boys Lacrosse";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -57,7 +57,7 @@ function boysLacrosse() {
 function boysIceHockey() {
     var Title = "Boys Ice Hockey";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -66,7 +66,7 @@ function boysIceHockey() {
 function boysSoccer() {
     var Title = "Boys Soccer";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -74,7 +74,7 @@ function boysSoccer() {
 
 function boysVolleyball() {
     var Title = "Boys Volleyball";
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
 	var tags = [];
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
@@ -83,7 +83,7 @@ function boysVolleyball() {
 
 function boysWrestling() {
     var Title = "Boys Wrestling";
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
 	var tags = [];
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
@@ -93,7 +93,7 @@ function boysWrestling() {
 function girlsVolleyball() {
     var Title = "Girls Volleyball";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -102,7 +102,7 @@ function girlsVolleyball() {
 function girlsBasketball() {
     var Title = "Girls Basketball";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -111,7 +111,7 @@ function girlsBasketball() {
 function girlsFieldHockey() {
     var Title = "Girls Field Hockey";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -120,7 +120,7 @@ function girlsFieldHockey() {
 function girlsIceHockey() {
     var Title = "Girls Ice Hockey";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -129,7 +129,7 @@ function girlsIceHockey() {
 function girlsSoccer() {
     var Title = "Girls Soccer";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -138,7 +138,7 @@ function girlsSoccer() {
 function softball() {
     var Title = "Softball";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -147,7 +147,7 @@ function softball() {
 function cheer() {
     var Title = "Cheer";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -155,7 +155,7 @@ function cheer() {
 
 function crossCountry() {
     var Title = "Cross Country";
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -164,7 +164,7 @@ function crossCountry() {
 function golf() {
     var Title = "Golf";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -173,7 +173,7 @@ function golf() {
 function bowling() {
     var Title = "Bowling";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -182,7 +182,7 @@ function bowling() {
 function chessclub() {
     var Title = "Chess Club";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -192,7 +192,7 @@ function chessclub() {
 function classOf2019() {
     var Title = "Class of 2019";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -210,7 +210,7 @@ function classOf2020() {
 function classOf2021() {
     var Title = "Class of 2021";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -219,7 +219,7 @@ function classOf2021() {
 function classOf2022() {
     var Title = "Class of 2022";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -228,7 +228,7 @@ function classOf2022() {
 function StudentGov() {
     var Title = "DHS Student Government";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -237,7 +237,7 @@ function StudentGov() {
 function athleticLeadershipCouncil() {
     var Title = "Athletic Leadership Council";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -246,7 +246,7 @@ function athleticLeadershipCouncil() {
 function dramaClub() {
     var Title = "Dover High School Drama Club";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -255,7 +255,7 @@ function dramaClub() {
 function earthAction() {
     var Title = "Earth Action";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -264,7 +264,7 @@ function earthAction() {
 function equestrian() {
     var Title = "Oyster River - Equestrian Team";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -273,7 +273,7 @@ function equestrian() {
 function ffa() {
     var Title = "Future Farmers of America";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -282,7 +282,7 @@ function ffa() {
 function gsa() {
     var Title = "Gay Straight Alliance";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -292,7 +292,7 @@ function gsa() {
 function graniteStateChallenge() {
     var Title = "Granite State Challenge";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -301,7 +301,7 @@ function graniteStateChallenge() {
 function interactClub() {
     var Title = "Interact Club";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -310,7 +310,7 @@ function interactClub() {
 function keyClub() {
     var Title = "Key Club";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -329,7 +329,7 @@ function mathTeam() {
 function NHS() {
     var Title = "National Honors Society";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text("");
 	$("#Description").append(Description);
@@ -338,7 +338,7 @@ function NHS() {
 function TNHS() {
     var Title = "NH Technical Honors Society";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -348,7 +348,7 @@ function TNHS() {
 function NJROTC() {
     var Title = "NJROTC";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -357,7 +357,7 @@ function NJROTC() {
 function photographyClub() {
     var Title = "Photography Club";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -366,7 +366,7 @@ function photographyClub() {
 function projectSearch() {
     var Title = "Project SEARCH";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -375,7 +375,7 @@ function projectSearch() {
 function RedCrossClub() {
     var Title = "Red Cross Club";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -384,7 +384,7 @@ function RedCrossClub() {
 function DSR() {
     var Title = "Dover Shockwave Robotics";
 	var tags = [];
-    var Description = \`Work in progress...\`;
+    var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
    	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -393,7 +393,7 @@ function DSR() {
 function theTide() {
 	var Title = "The Tide";
 	var tags = [];
-	var Description = \`Work in progress...\`;
+	var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
 	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -402,7 +402,7 @@ function theTide() {
 function TGC() {
 	var Title = "Traditional Gaming Club";
 	var tags = [];
-	var Description = \`Work in progress...\`;
+	var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
 	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -411,7 +411,7 @@ function TGC() {
 function WAC() {
 	var Title = "World Arts Club";
 	var tags = [];
-	var Description = \`Work in progress...\`;
+	var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
 	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -420,7 +420,7 @@ function WAC() {
 function YtY() {
 	var Title = "Youth - to - Youth";
 	var tags = [];
-	var Description = \`Work in progress...\`;
+	var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
 	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -429,7 +429,7 @@ function YtY() {
 function frenchClub() {
 	var Title = "French Club";
 	var tags = [];
-	var Description = \`Work in progress...\`;
+	var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
 	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -438,7 +438,7 @@ function frenchClub() {
 function latinClub() {
 	var Title = "Latin Club";
 	var tags = [];
-	var Description = \`Work in progress...\`;
+	var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
 	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -447,7 +447,7 @@ function latinClub() {
 function spanishClub() {
 	var Title = "Spanish Club";
 	var tags = [];
-	var Description = \`Work in progress...\`;
+	var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
 	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -456,7 +456,7 @@ function spanishClub() {
 function percussionEnsemble() {
 	var Title = "Percussion Ensemble";
 	var tags = ["music","performance"];
-	var Description = \`Work in progress...\`;
+	var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
 	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -465,7 +465,7 @@ function percussionEnsemble() {
 function colorGuard() {
 	var Title = "Marching Band & Color Guard";
 	var tags = ["music","performance"];
-	var Description = \`Work in progress...\`;
+	var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
 	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -474,7 +474,7 @@ function colorGuard() {
 function winterGuard() {
 	var Title = "Winter Guard";
 	var tags = ["music","performance"];
-	var Description = \`Work in progress...\`;
+	var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
 	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -483,7 +483,7 @@ function winterGuard() {
 function varietyShow() {
 	var Title = "Variety Show";
 	var tags = ["music","performance"];
-	var Description = \`Work in progress...\`;
+	var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
 	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
@@ -492,7 +492,7 @@ function varietyShow() {
 function jazzBand() {
 	var Title = "Jazz Band";
 	var tags = ["music","performance"];
-	var Description = \`Work in progress...\`;
+	var Description = \`<img src="../static/media/underConstruction.png" id="ucBanner">\`;
 	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
