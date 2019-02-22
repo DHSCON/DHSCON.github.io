@@ -1,48 +1,51 @@
 $(document).ready(function(){
 	function Search(query){
-		searchArr = text.split("function");
+		let searchArr = text.split("function");
+		console.log(searchArr);
 		searchArr.shift();
 		let positive = []
 		for(let i=searchArr.length-1;i>0;i--){
-			regex = new RegExp(query,"i")
-			//negative
-			if(searchArr[i].search(regex)==-1){
-				searchArr.splice(i,1);
-			//positive	
-			}else{
-				function Title(str){
-					let getTitle = str;
-					getTitle=getTitle.substring(getTitle.search("Title")+9);
-					getTitle = getTitle.substring(0,getTitle.search("\""));
-					return getTitle;
-				}
-				function description(str){
-					let getDes = str;
-					getDes=getDes.substring(getDes.search("Description")+15);
-					getDes = getDes.substring(0, getDes.search("\`"));
-					//strip html tags
-					function strip_html_tags(str){
-					   if ((str===null) || (str===''))
-						   return false;
-					  else
-					   str = str.toString();
-					  return str.replace(/<[^>]*>/g, '');
+			let words = query.split(" ")
+			for(let j=0;j<words.length;j++){
+				let regex = new RegExp(words[j],"i")
+				//negative
+				if(searchArr[i].search(regex)==-1){
+				//positive	
+				}else{
+					function Title(str){
+						let getTitle = str;
+						getTitle=getTitle.substring(getTitle.search("Title")+9);
+						getTitle = getTitle.substring(0,getTitle.search("\""));
+						return getTitle;
 					}
-					getDes = strip_html_tags(getDes)
-					return getDes;
-				}
-				function getFunc(str){
-					let clubFunction = str;
-					clubFunction=clubFunction.trim();
-					clubFunction = clubFunction.substring(0, clubFunction.search(/\s/));
-					return clubFunction;
-				}
+					function description(str){
+						let getDes = str;
+						getDes=getDes.substring(getDes.search("Description")+15);
+						getDes = getDes.substring(0, getDes.search("\`"));
+						//strip html tags
+						function strip_html_tags(str){
+						   if ((str===null) || (str===''))
+							   return false;
+						  else
+						   str = str.toString();
+						  return str.replace(/<[^>]*>/g, '');
+						}
+						getDes = strip_html_tags(getDes)
+						return getDes;
+					}
+					function getFunc(str){
+						let clubFunction = str;
+						clubFunction=clubFunction.trim();
+						clubFunction = clubFunction.substring(0, clubFunction.search(/\s/));
+						return clubFunction;
+					}
 
-				positive.push({
-					"title": Title(searchArr[i]),
-					"description": description(searchArr[i]),
-					"function": getFunc(searchArr[i])
-				})
+					positive.push({
+						"title": Title(searchArr[i]),
+						"description": description(searchArr[i]),
+						"function": getFunc(searchArr[i])
+					})
+				}
 			}
 		}
 		searchArr.shift();

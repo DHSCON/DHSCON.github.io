@@ -400,8 +400,8 @@ function theTide() {
 
 function TGC() {
 	var Title = "Traditional Gaming Club";
-	var tags = [];
-	var Description = `<img src="../static/media/underConstruction.png" id="ucBanner">`;
+	var tags = ["game","games",""];
+	var Description = `<img src="../static/media/gaming.png" height="149" width="160">`;
 	$("#ClubName").text(Title);
 	$("#Description").text(""); 
 	$("#Description").append(Description);
