@@ -82,6 +82,12 @@ h1 {
 	font-family: times new roman;
 }
 
+#ucBanner {
+	width: auto;
+	height: auto;
+	align-content: center;
+}
+
 .clublink {
 	margin: auto;
 	height: 45px;
