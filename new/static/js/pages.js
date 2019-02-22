@@ -245,7 +245,7 @@ function athleticLeadershipCouncil() {
 function dramaClub() {
 	var Title = "Dover High School Drama Club";
 	var tags = [];
-	var Description = `<img src="../static/media/underConstruction.png" id="ucBanner">`;
+	var Description = `<img src="../static/media/earthActionMeetingTimes.png" id="ucBanner">`;
 	$("#ClubName").text(Title);
 	$("#Description").text("");
 	$("#Description").append(Description);
@@ -254,9 +254,9 @@ function dramaClub() {
 function earthAction() {
 	var Title = "Earth Action";
 	var tags = [];
-	var Description = `<img src="../static/media/underConstruction.png" id="ucBanner">
+	var Description = `<img src="../static/media/earthActionMeetingTimes.png" id="ucBanner">
 	<body class = "bodyText">
-		<h1 class = "class">Earth Action</h1>
+		<h1 class = "class">Our Objective.</h1>
 		<p class = "body">
 			Earth Action is a student-run environmental action club with a focus on moving Dover High School toward more environmentally sustainable practices.               
   			The club is hosted by Mr. Seekamp, Ms. Dromey-Heter and Ms. McCarron-Stewart Mondays after school twice a month in room 302. 
