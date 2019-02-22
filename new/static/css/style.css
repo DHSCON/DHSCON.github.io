@@ -219,9 +219,21 @@ a:active {
 	position: relative;
 	float: right;
 	padding: 20px;
-	font-size: 40px;
-	width: 50px;
+  font-size: 40px;
+  width: 50px;
 	color: white;
+	transition: 1s;
+
+}
+#socialmedia:hover {
+	position: relative;
+	float: right;
+	padding: 20px;
+  font-size: 40px;
+  width: 50px;
+	color: grey;
+	cursor: pointer;
+	transition: 1s;
 }
 
 #search{
