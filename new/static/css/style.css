@@ -71,13 +71,27 @@ h1 {
 	color: green;
 	text-align: center;
 	font-family: verdana;
-	font-size: 30px;
+	font-size: 30;
 	font-weight: bold;
 }
 
 #Description {
-	font-size: 25;
+	color: green;
+	font-size: 30;
+	font-weight: bold;
 	font-family: times new roman;
+}
+
+#earthActionMeetingImg {
+	width:500px;
+	display: block;
+	height:500px;
+	align-content: center;
+	margin: auto;
+	margin-left: auto;
+  	margin-right: auto;
+	text-align: center
+	
 }
 
 .clublink {
@@ -219,9 +233,21 @@ a:active {
 	position: relative;
 	float: right;
 	padding: 20px;
-	font-size: 40px;
-	width: 50px;
+  font-size: 40px;
+  width: 50px;
 	color: white;
+	transition: 1s;
+
+}
+#socialmedia:hover {
+	position: relative;
+	float: right;
+	padding: 20px;
+  font-size: 40px;
+  width: 50px;
+	color: grey;
+	cursor: pointer;
+	transition: 1s;
 }
 
 #search{
