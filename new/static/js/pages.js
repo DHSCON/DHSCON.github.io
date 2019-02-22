@@ -254,7 +254,7 @@ function dramaClub() {
 function earthAction() {
 	var Title = "Earth Action";
 	var tags = [];
-	var Description = `<img src="../static/media/earthActionMeetingTimes.png" id="ucBanner">
+	var Description = `<img src="../static/media/earthActionMeetingTimes.png" id="earthActionMeetingImg">
 	<body class = "bodyText">
 		<h1 class = "class">Our Objective.</h1>
 		<p class = "body">

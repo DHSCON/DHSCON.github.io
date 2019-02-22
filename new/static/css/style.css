@@ -82,10 +82,16 @@ h1 {
 	font-family: times new roman;
 }
 
-#ucBanner {
-	width: auto;
-	height: auto;
+#earthActionMeetingImg {
+	width:500px;
+	display: block;
+	height:500px;
 	align-content: center;
+	margin: auto;
+	margin-left: auto;
+  	margin-right: auto;
+	text-align: center
+	
 }
 
 .clublink {
