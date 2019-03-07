@@ -255,14 +255,14 @@ function earthAction() {
 	var Title = "Earth Action";
 	var tags = [];
 	var Description = `
-	<img src="../static/media/earthActionMeetingTimes.png" id="earthActionMeetingImg">
-	<div class = "bodyText">
-		<h1 class = "class">Our Objective.</h1>
-		<p class = "body">
-			Earth Action is a student-run environmental action club with a focus on moving Dover High School toward more environmentally sustainable practices.               
-  			The club is hosted by Mr. Seekamp, Ms. Dromey-Heter and Ms. McCarron-Stewart Mondays after school twice a month in room 302. 
-  			The club can be joined my anyone at any time!<!--Reworked version of this page for presentation-->
-	</div>
+		<img src="../static/media/earthActionMeetingTimes.png" id="earthActionMeetingImg">
+		<div class = "bodyText">
+			<h1 class = "class">Our Objective.</h1>
+			<p class = "body">
+				Earth Action is a student-run environmental action club with a focus on moving Dover High School toward more environmentally sustainable practices.               
+				The club is hosted by Mr. Seekamp, Ms. Dromey-Heter and Ms. McCarron-Stewart Mondays after school twice a month in room 302. 
+				The club can be joined my anyone at any time!<!--Reworked version of this page for presentation-->
+		</div>
 	`;
 	$("#ClubName").text(Title);
 	$("#Description").text("");
