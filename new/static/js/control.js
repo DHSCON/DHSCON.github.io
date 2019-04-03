@@ -84,7 +84,7 @@ $(document).ready(function(){
 			x+=.1;
 			console.log(x)
 			$('.content').css({"transform":`rotate(${x}deg)`})
-				if(x == 180){
+				if(x >= 2){
 					window.open("https://www.youtube.com/watch?v=oHg5SJYRHA0")
 					x = 0
 					$('.content').css({"transform":`rotate(${x}deg)`})
