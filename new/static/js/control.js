@@ -69,4 +69,17 @@ $(document).ready(function(){
 		let search = $("#search").val();
 		Search(search);
 	});
+
+	x = 0;
+	$('#Description').click(function(){
+	console.log(x)
+	x+=5;
+	$('.content').css({"transform":`rotate(${x}deg)`})
+	if(x == 180){
+		window.open("https://www.youtube.com/watch?v=oHg5SJYRHA0")
+		x = 0
+		$('.content').css({"transform":`rotate(${x}deg)`})
+	}
+});
+
 });

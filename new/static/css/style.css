@@ -228,6 +228,14 @@ a:active {
 	border: 0px;
 	border-radius: 0px 0px 5px 5px;
 }
+.footerText{
+	float: left;
+	text-align: inherit;
+	padding: 20px;
+	padding-top: 45px; 
+	font-size: 15px; 
+	color: white;
+}
 
 #socialmedia {
 	position: relative;
