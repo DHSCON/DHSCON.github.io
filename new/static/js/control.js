@@ -80,14 +80,16 @@ $(document).ready(function(){
   
   x = 0;
 	$('#Description').click(function(){
-		console.log(x)
-		x+=.1;
-		$('.content').css({"transform":`rotate(${x}deg)`})
-			if(x == 180){
-				window.open("https://www.youtube.com/watch?v=oHg5SJYRHA0")
-				x = 0
-				$('.content').css({"transform":`rotate(${x}deg)`})
-			}
+		if(page=="dconHome"){
+			x+=.1;
+			console.log(x)
+			$('.content').css({"transform":`rotate(${x}deg)`})
+				if(x == 180){
+					window.open("https://www.youtube.com/watch?v=oHg5SJYRHA0")
+					x = 0
+					$('.content').css({"transform":`rotate(${x}deg)`})
+				}
+		}
 	});
 });
 
