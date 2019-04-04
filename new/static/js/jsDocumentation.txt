@@ -43,3 +43,4 @@ start function:
 	sets the title to the title of the club
 	empties the description
 	fills the description with the description of the club
+	replaces title of tab with title of page
