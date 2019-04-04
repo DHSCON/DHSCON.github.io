@@ -1,37 +1,48 @@
 let clubs
 let page
 
+// when the page loads:
 $(document).ready(function(){
 	
+	// gets the JSON:
 	$.get("	https://api.myjson.com/bins/xqszu", function(data, textStatus, jqXHR) {
+		//sets clubs as the response
 		clubs = data;
+		//page as the url parameter
 		page = getUrlParameter("page");
+		//calls the start function for the club with the name that matches page
 		start(clubs.pages[clubs.pages.findIndex(findClub)]);
 	});
 	
 	
-	
+	//searches the the clubs for a string:
 	function Search(query){
 		
+		//splits query into an array on the spaces
 		query = query.split(" ");
 		
+		//creates a regexp from each word to ignore case
 		for(let i=0;i<query.length;i++){
 			query[i]= new RegExp(query[i],"i")
 		}
 		
 		let result=[]
 		
+		//go through the clubs 1 by 1:
 		for(let i=0;i<clubs.pages.length; i++){
 			let present=false;
 			club = clubs.pages[i];
+			//go through the words of the query 1 by 1:
 			for(let j=0; j<query.length; j++){
-				
+				//if the club matches the word of the query:
 				if(checkPage(club, query[j])){
+					//tell if the result has been found before
 					for(let k=0; k<result.length;k++){
 						if(club==result[k]){
 							present=true;
 						}
 					}
+					//if it hasn't been yet, add it to the list
 					if(!present){
 						result.push(club);
 					}
@@ -41,13 +52,16 @@ $(document).ready(function(){
 		
 		console.log(result);
 		
+		//changes the title and clears the description
 		$("#ClubName").text("Search Results:")
 		$("#Description").text("")
 		
+		//if there are no search results, says "No Results Found"
 		if(result==0){
 			$("#Description").text("No Results Found")
 		}
 		
+		//puts a div in for each search result
 		for(let i=0;i<result.length;i++){
 			$("#Description").append(`<div id=\"searchResult${i}\" class=\"result\"></div>`);
 			$(`#searchResult${i}`).append(`<a href=\"\./?page=${result[i].name}\">${result[i].title}</a>`);
@@ -58,11 +72,15 @@ $(document).ready(function(){
 		
 	}
 
+	//calls the search function when the "Go" button is clicked
 	$("#submit").click(function(){
+		//gets the search string
 		let search = $("#search").val();
+		//call the search function with the search string as a parameter
 		Search(search);
 	});
 	
+	//function gets the URL parameter
 	function getUrlParameter(sParam) {
 		var sPageURL = window.location.search.substring(1),
 			sURLVariables = sPageURL.split('&'),
@@ -77,8 +95,9 @@ $(document).ready(function(){
 			}
 		}
 	};
-  
-  x = 0;
+	
+	//rickroll
+	x = 0;
 	$('#Description').click(function(){
 		if(page=="dconHome"){
 			x+=.1;
@@ -93,6 +112,7 @@ $(document).ready(function(){
 	});
 });
 
+//function that strips html from a string
 function strip_html_tags(str){
 	if ((str===null) || (str==='')){
 		return false;	
@@ -102,18 +122,25 @@ function strip_html_tags(str){
 	}
 }
 
+//function that returns if a string is in an object
 function checkPage(obj, str){
 	return(obj.title.search(str)!=-1 || obj.description.search(str)!=-1 || obj.tags.includes(str));
 }
 
+//function that returns if a club name is equal to the page
 function findClub(club){
 	return club.name==page;
 }
 
+//start function:
 function start(club){
-	$("#ClubName").text(club.title)
-	$("#Description").text("")
-	$("#Description").append(club.description)
-	$("title").text(club.title)
+	//sets the title to the title of the club
+	$("#ClubName").text(club.title);
+	//empties the description
+	$("#Description").text("");
+	//fills the description with the description of the club
+	$("#Description").append(club.description);
+	//replaces title of tab with title of page
+	$("title").text(club.title);
 	
 }
