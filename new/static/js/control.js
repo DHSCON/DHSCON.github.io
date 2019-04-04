@@ -114,5 +114,6 @@ function start(club){
 	$("#ClubName").text(club.title)
 	$("#Description").text("")
 	$("#Description").append(club.description)
+	$("title").text(club.title)
 	
 }
