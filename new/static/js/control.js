@@ -101,7 +101,6 @@ $(document).ready(function(){
 	$('#Description').click(function(){
 		if(page=="dconHome"){
 			x+=.1;
-			console.log(x)
 			$('.content').css({"transform":`rotate(${x}deg)`})
 				if(x >= 2){
 					window.open("https://www.youtube.com/watch?v=oHg5SJYRHA0")
