@@ -1,6 +1,30 @@
-clubs.pages[(GET INDEX OF CLUB)].description = `
-
-`//put description between tildes 
+clubs.pages[(33)].description = `
+		Teacher:Ms.Hall and Ms.Stegman
+		<br>
+		Registration: Registry form.
+		Requirements to join: See Applications and Fees.
+		Fees:10$ New members. 5$ returning members.
+		Funding: Both Apple Harvests.
+		Cake Walk.
+		Color run spring.
+		Parent’s night 1st friday dec.
+		Meetings: Auditorium
+		Info: 7 years ago, a student went to a Rotary conference, and wanted to make something similar.
+		What we do: Community service, connected to Rotary club.
+		How to find out about meetings: Mailing list and the board in the hall near room 216.
+		Extra info: Minimum 20 hour per year.
+		
+`
+clubs.pages[(34)].description = `
+	Teacher: Mr. McCann
+	Registration: No application, just ask to join.
+	Fees: $11
+	Meetings: Room 134 every Wednesday.
+	What we do: We are a group of people that works together to do community service events.
+	This club was started approximately 35 years ago. We also help at the Coastal Cleanup in October, the blood drive in April, and the Volunteer a Riverside Rest Home.
+	How to find out about meetings: Meetings are announced in the morning with the rest of the announcements.
+'
+//put description between tildes 
 
 clubs = JSON.stringify(clubs)
 
