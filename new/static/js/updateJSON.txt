@@ -23,7 +23,7 @@ clubs.pages[(34)].description = `
 	What we do: We are a group of people that works together to do community service events.
 	This club was started approximately 35 years ago. We also help at the Coastal Cleanup in October, the blood drive in April, and the Volunteer a Riverside Rest Home.
 	How to find out about meetings: Meetings are announced in the morning with the rest of the announcements.
-'
+`
 //put description between tildes 
 
 clubs = JSON.stringify(clubs)
