@@ -1,0 +1,17 @@
+clubs.pages[0].description=`
+<img src=\"../static/media/underConstruction.png\" id=\"ucBanner\">
+<div class="news2">
+<p class="newsheader">News!</p>
+<iframe scrolling="no"style="overflow:hidden;"class="news"src="news_scroll.html" height="300px"></iframe>
+</div>
+`
+clubs = JSON.stringify(clubs)
+$.ajax({
+    url:"https://api.myjson.com/bins/xqszu",
+    type:"PUT",
+    data: clubs,
+    contentType:"application/json; charset=utf-8",
+    dataType:"json",
+    success: function(data, textStatus, jqXHR){  
+    }
+});   
