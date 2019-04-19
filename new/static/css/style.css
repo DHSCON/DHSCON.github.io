@@ -101,17 +101,73 @@ h1 {
 	font-weight: 900;
 	color: green;
 	width: 100%;
-	background-color: #ddd;
+	background-color: #eee;
 	border: 2px;
-
+	border-radius: 6px;
 }
 
+.clublink:hover {
+	margin: auto;
+	height: 45px;
+	word-wrap: break-word;
+	font-weight: 900;
+	color: green;
+	width: 100%;
+	background-color: #eee;
+	border: 2px;
+	border-radius: 6px 6px 0px 0px;
+}
 
 
 .clublink:hover .clublink-content {
 	display: block;
 	font-weight: 900;
 	word-wrap: break-word;
+	border-radius: 0px;
+}
+
+.clubsubcategory {
+	margin: auto;
+	height: 45px;
+	word-wrap: break-word;
+	font-weight: 900;
+	color: green;
+	width: 99.5%;
+	background-color: #eee;
+	border: 2px;
+	border-radius: 0px;
+}
+.clubsubcategory:hover {
+	margin: auto;
+	height: 45px;
+	word-wrap: break-word;
+	font-weight: 900;
+	color: #eee;
+	width: 99.5%;
+	background-color: green;
+	border: 2px;
+}
+
+.clubbottomcategory {
+	margin: auto;
+	height: 45px;
+	word-wrap: break-word;
+	font-weight: 900;
+	color: green;
+	width: 99%;
+	background-color: #eee;
+	border: 2px;
+	border-radius: 0px 0px 6px 6px;
+}
+.clubbottomcategory:hover {
+	margin: auto;
+	height: 45px;
+	word-wrap: break-word;
+	font-weight: 900;
+	color: #eee;
+	width: 99%;
+	background-color: green;
+	border: 2px;
 }
 
 .clublink-content {
@@ -121,6 +177,7 @@ h1 {
 	width: 16.25%;
 	z-index: 1;
 	font-weight: 900;
+	border-radius: 0px;
 }
 
 .clublink:hover{
@@ -177,9 +234,19 @@ h1 {
 	word-wrap: break-word;
 }
 
-.clubButtons {
-	padding: 10px;
+.clubButtonsSmall {
+	padding: 14px;
 	margin: auto;
+	border-radius: 4px;
+	font-family: arial;
+	font-size: 13px;
+}
+.clubButtonsBig {
+	padding: 5px;
+	margin: auto;
+	border-radius: 4px;
+	font-family: arial;
+	font-size: 13px;
 }
 
 a:link {
@@ -255,7 +322,7 @@ a:active {
   width: 50px;
 	color: grey;
 	cursor: pointer;
-	transition: 1s;
+	transition: 0.5s;
 }
 
 #search{
@@ -291,7 +358,13 @@ border-color: #000000;
 border-radius: 5px;
 background-color: #c6cad1;
 width: 300px;
-
+}
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+	background-color: #d6d6d6;
+	border-width: 4px;
 }
 .newsheader{
 text-align: center;
@@ -299,4 +372,11 @@ background: rgb(214, 214, 214);
 margin: 7px;
 font-size: 20px;
 border-radius: 2px;
+}
+
+th {
+    font-weight: bold;
+	text-align: -internal-center;
+	background-color: #d6d6d6;
+	border-width: 4px;
 }
