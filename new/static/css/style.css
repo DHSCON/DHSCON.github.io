@@ -286,12 +286,11 @@ border: none;
 overflow:hidden;
 }
 .news2{
-border: 5px;
 border-style: solid;
 border-color: #000000;
-border-radius:5px;
+border-radius: 5px;
 background-color: #c6cad1;
-width: 300px
+width: 300px;
 
 }
 .newsheader{
@@ -299,5 +298,5 @@ text-align: center;
 background: rgb(214, 214, 214);
 margin: 7px;
 font-size: 20px;
-border-radius:2px;
+border-radius: 2px;
 }
