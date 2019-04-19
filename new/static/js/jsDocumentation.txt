@@ -1,0 +1,46 @@
+when the page loads:
+	
+	gets the JSON:
+		sets clubs as the response
+		page as the url parameter
+		calls the start function for the club with the name that matches page
+	
+	
+	
+	
+	searches the the clubs for a string:
+		
+		splits query into an array on the spaces
+		creates a regexp from each word to ignore case
+		result = []
+		go through the clubs 1 by 1:
+			go through the words of the query 1 by 1:
+				if the club matches the word of the query:
+					tell if the result has been found before
+					if it hasn't been yet, add it to the list
+
+		changes the title and clears the description
+		if there are no search results, says "No Results Found"
+		puts a div in for each search result
+		
+	
+
+	calls the search function when the button is clicked
+		gets the search string
+		call the search function with the search string as a parameter
+	
+	function gets the URL parameter
+	
+	rickroll
+
+function that strips html from a string
+
+function that returns if a string is in an object
+
+function that returns if a club name is equal to the page
+
+start function:
+	sets the title to the title of the club
+	empties the description
+	fills the description with the description of the club
+	replaces title of tab with title of page
