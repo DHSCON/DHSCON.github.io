@@ -12,6 +12,7 @@ $(document).ready(function(){
 		page = getUrlParameter("page");
 		//calls the start function for the club with the name that matches page
 		start(clubs.pages[clubs.pages.findIndex(findClub)]);
+		getIP()
 	});
 	
 	
@@ -142,4 +143,31 @@ function start(club){
 	//replaces title of tab with title of page
 	$("title").text(club.title);
 	
+}
+
+function getIP(){
+	$.getJSON('http://ip-api.com/json?callback=?', function(data) {
+		let found = false
+		for(let i=0; i <clubs.users.length; i++){
+			if(data.query==clubs.users[i]){
+				found = true
+			}
+		}
+		if(!found){
+			clubs.users.push(data.query)
+			
+			update = JSON.stringify(clubs)
+
+			$.ajax({
+				url:"https://api.myjson.com/bins/xqszu",
+				type:"PUT",
+				data: update,
+				contentType:"application/json; charset=utf-8",
+				dataType:"json",
+				success: function(data, textStatus, jqXHR){
+
+				}
+			});  
+		}
+	});
 }
