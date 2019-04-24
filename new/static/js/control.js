@@ -146,15 +146,15 @@ function start(club){
 }
 
 function getIP(){
-	$.getJSON('http://ip-api.com/json?callback=?', function(data) {
+	$.getJSON('https://ipapi.co/json/', function(data) {
 		let found = false
 		for(let i=0; i <clubs.users.length; i++){
-			if(data.query==clubs.users[i]){
+			if(data.ip==clubs.users[i]){
 				found = true
 			}
 		}
 		if(!found){
-			clubs.users.push(data.query)
+			clubs.users.push(data.ip)
 			
 			update = JSON.stringify(clubs)
 
