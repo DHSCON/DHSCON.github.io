@@ -5,6 +5,7 @@
 	<title>Dover Community Outreach Network</title>
 	<script src="../app/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../static/js/control.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../static/js/addClubFunction.js" type="text/javascript" charset="utf-8"></script>
 	<link href="../static/css/style.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
@@ -198,8 +199,18 @@
 
 			<th width="16.66%">
 				<div class="clublink">
-					<input id="search" placeholder="Search..?"></input>
-					<button id="submit">Go</button>
+					<span>
+						<p class="clubButtonsSmall">
+							Search
+						</p>
+					</span>
+					<div class="clublink-content">
+						<form action="./?page=search&">
+							<input type="hidden" name="page" value="search">
+							<input type="text" name="query" placeholder="Search..?" class="clubsubcategory">
+							<input type="submit" value="Search" class="clubsubcategory">
+						</form>
+					</div>
 				</div>
             </th>
           </tr>
