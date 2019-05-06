@@ -1,5 +1,6 @@
 let clubs
 let page
+let subj
 
 // when the page loads:
 $(document).ready(function(){
@@ -55,6 +56,9 @@ function checkPage(obj, str){
 function findClub(club){
 	return club.name==page;
 }
+function findEmail(email){
+	return email.title==subj;
+}
 
 //start function:
 function start(club){
@@ -73,6 +77,15 @@ function start(club){
 		//call the search function with the search string as a parameter
 		Search(search);
 	}
+	else if(page=="sendEmail"){
+		subj = getUrlParameter("subj");
+		fillEmail(clubs.email[clubs.email.findIndex(findEmail)]);
+	}
+	
+}
+
+function fillEmail(email){
+	$("#email").prepend(email.emailForm);
 	
 }
 
@@ -173,4 +186,20 @@ function Search(query){
 		
 
 	}
+}
+
+function getFormObj(formId) {
+    var formObj = {};
+    var inputs = $('#'+formId).serializeArray();
+    $.each(inputs, function (i, input) {
+        formObj[input.name] = input.value;
+    });
+    return formObj;
+}
+
+function sendEmail(){
+	
+	let emailDetails = getFormObj("email")
+	emailDetails.timestamp = new Date().getTime();
+	console.log(emailDetails)
 }
