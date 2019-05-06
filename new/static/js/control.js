@@ -202,4 +202,7 @@ function sendEmail(){
 	let emailDetails = getFormObj("email")
 	emailDetails.timestamp = new Date().getTime();
 	console.log(emailDetails)
+	let service_id = "default_service";
+	let template_id = "template_XOmMYGhn";
+	emailjs.send(service_id, template_id, emailDetails);
 }
