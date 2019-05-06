@@ -12,89 +12,8 @@ $(document).ready(function(){
 		page = getUrlParameter("page");
 		//calls the start function for the club with the name that matches page
 		start(clubs.pages[clubs.pages.findIndex(findClub)]);
+		getIP()
 	});
-	
-	
-	//searches the the clubs for a string:
-	function Search(query){
-		
-		//splits query into an array on the spaces
-		query = query.split(" ");
-		
-		//creates a regexp from each word to ignore case
-		for(let i=0;i<query.length;i++){
-			query[i]= new RegExp(query[i],"i")
-		}
-		
-		let result=[]
-		
-		//go through the clubs 1 by 1:
-		for(let i=0;i<clubs.pages.length; i++){
-			let present=false;
-			club = clubs.pages[i];
-			//go through the words of the query 1 by 1:
-			for(let j=0; j<query.length; j++){
-				//if the club matches the word of the query:
-				if(checkPage(club, query[j])){
-					//tell if the result has been found before
-					for(let k=0; k<result.length;k++){
-						if(club==result[k]){
-							present=true;
-						}
-					}
-					//if it hasn't been yet, add it to the list
-					if(!present){
-						result.push(club);
-					}
-				}
-			}
-		}
-		
-		console.log(result);
-		
-		//changes the title and clears the description
-		$("#ClubName").text("Search Results:")
-		$("#Description").text("")
-		
-		//if there are no search results, says "No Results Found"
-		if(result==0){
-			$("#Description").text("No Results Found")
-		}
-		
-		//puts a div in for each search result
-		for(let i=0;i<result.length;i++){
-			$("#Description").append(`<div id=\"searchResult${i}\" class=\"result\"></div>`);
-			$(`#searchResult${i}`).append(`<a href=\"\./?page=${result[i].name}\">${result[i].title}</a>`);
-			$(`#searchResult${i}`).append(`<div class=\"searchDes\">${strip_html_tags(result[i].description)}</div>`);
-			
-
-		}
-		
-	}
-
-	//calls the search function when the "Go" button is clicked
-	$("#submit").click(function(){
-		//gets the search string
-		let search = $("#search").val();
-		//call the search function with the search string as a parameter
-		Search(search);
-	});
-	
-	//function gets the URL parameter
-	function getUrlParameter(sParam) {
-		var sPageURL = window.location.search.substring(1),
-			sURLVariables = sPageURL.split('&'),
-			sParameterName,
-			i;
-
-		for (i = 0; i < sURLVariables.length; i++) {
-			sParameterName = sURLVariables[i].split('=');
-
-			if (sParameterName[0] === sParam) {
-				return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
-			}
-		}
-	};
 	
 	//rickroll
 	x = 0;
@@ -123,7 +42,13 @@ function strip_html_tags(str){
 
 //function that returns if a string is in an object
 function checkPage(obj, str){
-	return(obj.title.search(str)!=-1 || obj.description.search(str)!=-1 || obj.tags.includes(str));
+		let found = false;
+		if(obj.title.search(str)!=-1){found=true}
+		if(obj.description.search(str)!=-1){found=true}
+		for(let i=0; i<obj.tags.length;i++){
+			if(obj.tags[i].search(str)!=-1){found=true}
+		}
+		return found;
 }
 
 //function that returns if a club name is equal to the page
@@ -133,6 +58,7 @@ function findClub(club){
 
 //start function:
 function start(club){
+	let search;
 	//sets the title to the title of the club
 	$("#ClubName").text(club.title);
 	//empties the description
@@ -141,5 +67,110 @@ function start(club){
 	$("#Description").append(club.description);
 	//replaces title of tab with title of page
 	$("title").text(club.title);
+	if(page=="search"){
+		//gets the search string
+		search = getUrlParameter("query")
+		//call the search function with the search string as a parameter
+		Search(search);
+	}
 	
+}
+
+function getIP(){
+	$.getJSON('https://ipapi.co/json/', function(data) {
+		let found = false
+		for(let i=0; i <clubs.users.length; i++){
+			if(data.ip==clubs.users[i]){
+				found = true
+			}
+		}
+		if(!found){
+			clubs.users.push(data.ip)
+			
+			update = JSON.stringify(clubs)
+
+			$.ajax({
+				url:"https://api.myjson.com/bins/xqszu",
+				type:"PUT",
+				data: update,
+				contentType:"application/json; charset=utf-8",
+				dataType:"json",
+				success: function(data, textStatus, jqXHR){
+
+				}
+			});  
+		}
+	});
+}
+
+//function gets the URL parameter
+function getUrlParameter(sParam) {
+	let sPageURL = window.location.search.substring(1),
+		sURLVariables = sPageURL.split('&'),
+		sParameterName,
+		i;
+
+	for (i = 0; i < sURLVariables.length; i++) {
+		sParameterName = sURLVariables[i].split('=');
+
+		if (sParameterName[0] === sParam) {
+			return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+		}
+	}
+}
+
+//searches the the clubs for a string:
+function Search(query){
+	
+	//splits query into an array on the spaces
+	query = query.split(" ");
+	
+	//creates a regexp from each word to ignore case
+	for(let i=0;i<query.length;i++){
+		query[i]= new RegExp(query[i],"i")
+	}
+	
+	let result=[]
+	
+	//go through the clubs 1 by 1:
+	for(let i=0;i<clubs.pages.length; i++){
+		let present=false;
+		club = clubs.pages[i];
+		//go through the words of the query 1 by 1:
+		for(let j=0; j<query.length; j++){
+			//if the club matches the word of the query:
+			if(checkPage(club, query[j])){
+				//tell if the result has been found before
+				for(let k=0; k<result.length;k++){
+					if(club==result[k]){
+						present=true;
+					}
+				}
+				//if it hasn't been yet, add it to the list
+				if(!present){
+					result.push(club);
+				}
+			}
+		}
+	}
+	
+	console.log(result);
+	
+	//changes the title and clears the description
+	$("#ClubName").text("Search Results:")
+	$("#Description").text("")
+	
+	//if there are no search results, says "No Results Found"
+	if(result==0){
+		$("#Description").text("No Results Found")
+	}
+	
+	//puts a div in for each search result
+	for(let i=0;i<result.length;i++){
+		$("#Description").append(`<div id=\"searchResult${i}\" class=\"result\"></div>`);
+		$(`#searchResult${i}`).append(`<a href=\"\./?page=${result[i].name}\">${result[i].title}</a>`);
+		$(`#searchResult${i}`).append(`<div class=\"searchDes\">${strip_html_tags(result[i].description)}</div>`);
+		
+
+	}
 }
