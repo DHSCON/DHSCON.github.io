@@ -24,6 +24,21 @@ clubs.pages[(34)].description = `
 	This club was started approximately 35 years ago. We also help at the Coastal Cleanup in October, the blood drive in April, and the Volunteer a Riverside Rest Home.
 	How to find out about meetings: Meetings are announced in the morning with the rest of the announcements.
 `
+clubs.pages[(21)].description = `
+	The class 2019 leadership team for the class of 2019. The club organizes activities for the class, 
+		as well as fund raising events. Meetings are every Tuesday after school in room 246 with Ms. Stancel and Ms. Detroia.
+		for more information, contact either of the two.
+`
+
+
+
+
+
+
+
+
+
+
 //put description between tildes 
 
 clubs = JSON.stringify(clubs)
