@@ -56,9 +56,6 @@ function checkPage(obj, str){
 function findClub(club){
 	return club.name==page;
 }
-function findEmail(email){
-	return email.title==subj;
-}
 
 //start function:
 function start(club){
@@ -79,6 +76,9 @@ function start(club){
 	}
 	else if(page=="sendEmail"){
 		subj = getUrlParameter("subj");
+		if(subj==undefined){
+			subj="default"
+		}
 		fillEmail(clubs.email[clubs.email.findIndex(findEmail)]);
 	}
 	
@@ -87,6 +87,31 @@ function start(club){
 function fillEmail(email){
 	$("#email").prepend(email.emailForm);
 	
+}
+
+function findEmail(email){
+	return email.title==subj;
+}
+
+function sendEmail(){
+	
+	let emailDetails = getFormObj("email")
+	emailDetails.timestamp = new Date().getTime();
+	let template_id
+	
+	switch(subj){
+		case "calendar":
+			template_id = "template_XOmMYGhn";
+			emailDetails.date = emailDetails.date.split('-').join('');
+			emailDetails.time = emailDetails.time.split(':').join('')+'00';
+			emailDetails.description = emailDetails.description.split(' ').join('+');
+			emailDetails.title = emailDetails.title.split(' ').join('+');
+			break
+	}
+	
+	console.log(emailDetails)
+	let service_id = "default_service";
+	emailjs.send(service_id, template_id, emailDetails);
 }
 
 function getIP(){
@@ -100,19 +125,9 @@ function getIP(){
 		if(!found){
 			clubs.users.push(data.ip)
 			
-			update = JSON.stringify(clubs)
-
-			$.ajax({
-				url:"https://api.myjson.com/bins/xqszu",
-				type:"PUT",
-				data: update,
-				contentType:"application/json; charset=utf-8",
-				dataType:"json",
-				success: function(data, textStatus, jqXHR){
-
-				}
-			});  
+			updateJSON()  
 		}
+		return data.ip
 	});
 }
 
@@ -195,14 +210,4 @@ function getFormObj(formId) {
         formObj[input.name] = input.value;
     });
     return formObj;
-}
-
-function sendEmail(){
-	
-	let emailDetails = getFormObj("email")
-	emailDetails.timestamp = new Date().getTime();
-	console.log(emailDetails)
-	let service_id = "default_service";
-	let template_id = "template_XOmMYGhn";
-	emailjs.send(service_id, template_id, emailDetails);
 }
