@@ -80,12 +80,17 @@ function start(club){
 			subj="default"
 		}
 		fillEmail(clubs.email[clubs.email.findIndex(findEmail)]);
+		$("#dialog").dialog({
+			autoOpen : false, modal : true, show : "blind", hide : "blind"
+		});
 	}
 	
 }
 
 function fillEmail(email){
+	$("#ClubName").text(email.name);
 	$("#email").prepend(email.emailForm);
+	
 	
 }
 
@@ -96,7 +101,7 @@ function findEmail(email){
 function sendEmail(){
 	
 	let emailDetails = getFormObj("email")
-	emailDetails.timestamp = new Date().getTime();
+	emailDetails.timestamp = new Date();
 	let template_id
 	
 	switch(subj){
@@ -106,12 +111,15 @@ function sendEmail(){
 			emailDetails.time = emailDetails.time.split(':').join('')+'00';
 			emailDetails.description = emailDetails.description.split(' ').join('+');
 			emailDetails.title = emailDetails.title.split(' ').join('+');
-			break
+			break;
+		case "default":
+			template_id = "default"
 	}
 	
 	console.log(emailDetails)
 	let service_id = "default_service";
 	emailjs.send(service_id, template_id, emailDetails);
+	$("#dialog").dialog("open");
 }
 
 function getIP(){

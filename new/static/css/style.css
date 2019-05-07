@@ -383,10 +383,19 @@ th {
 
 #email{
 	width:250px;
+	margin: auto;
 }
 
-#email div{
-	height: 75px;
+#email h3{
+	text-align: center;
+}
+
+#email .input{
+	height: 25px;
+}
+
+#containForm{
+	overflow: auto; 
 }
 
 #email span{
@@ -394,6 +403,11 @@ th {
 }
 
 #email input{
+	float:right;
+	width:115px;
+}
+
+#email textarea{
 	float:right;
 	width:115px;
 }
