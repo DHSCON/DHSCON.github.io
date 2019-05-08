@@ -11,6 +11,9 @@ $(document).ready(function(){
 		clubs = data;
 		//page as the url parameter
 		page = getUrlParameter("page");
+		if(page===undefined){
+			page = "dconHome"
+		}
 		//calls the start function for the club with the name that matches page
 		start(clubs.pages[clubs.pages.findIndex(findClub)]);
 		getIP()
@@ -80,9 +83,6 @@ function start(club){
 			subj="default"
 		}
 		fillEmail(clubs.email[clubs.email.findIndex(findEmail)]);
-		$("#dialog").dialog({
-			autoOpen : false, modal : true, show : "blind", hide : "blind"
-		});
 	}
 	
 }
@@ -90,6 +90,14 @@ function start(club){
 function fillEmail(email){
 	$("#ClubName").text(email.name);
 	$("#email").prepend(email.emailForm);
+	/* if(subj=="teacher"){
+		for(let i=0; i<clubs.teachers.length; i++){
+			$('#mySelect').append($('<option>', { 
+				value: teachers[i].email,
+				text : teachers[i].lastName
+			}));
+		}
+	} */
 	
 	
 }
@@ -112,6 +120,8 @@ function sendEmail(){
 			emailDetails.description = emailDetails.description.split(' ').join('+');
 			emailDetails.title = emailDetails.title.split(' ').join('+');
 			break;
+		case "teacher":
+			break
 		case "default":
 			template_id = "default"
 	}
@@ -119,7 +129,9 @@ function sendEmail(){
 	console.log(emailDetails)
 	let service_id = "default_service";
 	//emailjs.send(service_id, template_id, emailDetails);
-	$("#dialog").dialog("open");
+	if(confirm("Your email has been sent.\nThank you for contributing to the Dover Community Outreach Network.\nWould you like to go back?")){
+		history.go(-1);
+	}
 }
 
 function getIP(){
