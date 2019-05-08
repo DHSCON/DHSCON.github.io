@@ -388,3 +388,34 @@ th {
 	background-color: #d6d6d6;
 	border-width: 4px;
 }
+
+#email{
+	width:250px;
+	margin: auto;
+}
+
+#email h3{
+	text-align: center;
+}
+
+#email .input{
+	height: 25px;
+}
+
+#containForm{
+	overflow: auto; 
+}
+
+#email span{
+	float:left;
+}
+
+#email input{
+	float:right;
+	width:115px;
+}
+
+#email textarea{
+	float:right;
+	width:115px;
+}

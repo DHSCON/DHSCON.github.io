@@ -1,5 +1,6 @@
 let clubs
 let page
+let subj
 
 // when the page loads:
 $(document).ready(function(){
@@ -73,7 +74,52 @@ function start(club){
 		//call the search function with the search string as a parameter
 		Search(search);
 	}
+	else if(page=="sendEmail"){
+		subj = getUrlParameter("subj");
+		if(subj==undefined){
+			subj="default"
+		}
+		fillEmail(clubs.email[clubs.email.findIndex(findEmail)]);
+		$("#dialog").dialog({
+			autoOpen : false, modal : true, show : "blind", hide : "blind"
+		});
+	}
 	
+}
+
+function fillEmail(email){
+	$("#ClubName").text(email.name);
+	$("#email").prepend(email.emailForm);
+	
+	
+}
+
+function findEmail(email){
+	return email.title==subj;
+}
+
+function sendEmail(){
+	
+	let emailDetails = getFormObj("email")
+	emailDetails.timestamp = new Date();
+	let template_id
+	
+	switch(subj){
+		case "calendar":
+			template_id = "template_XOmMYGhn";
+			emailDetails.date = emailDetails.date.split('-').join('');
+			emailDetails.time = emailDetails.time.split(':').join('')+'00';
+			emailDetails.description = emailDetails.description.split(' ').join('+');
+			emailDetails.title = emailDetails.title.split(' ').join('+');
+			break;
+		case "default":
+			template_id = "default"
+	}
+	
+	console.log(emailDetails)
+	let service_id = "default_service";
+	emailjs.send(service_id, template_id, emailDetails);
+	$("#dialog").dialog("open");
 }
 
 function getIP(){
@@ -87,19 +133,9 @@ function getIP(){
 		if(!found){
 			clubs.users.push(data.ip)
 			
-			update = JSON.stringify(clubs)
-
-			$.ajax({
-				url:"https://api.myjson.com/bins/xqszu",
-				type:"PUT",
-				data: update,
-				contentType:"application/json; charset=utf-8",
-				dataType:"json",
-				success: function(data, textStatus, jqXHR){
-
-				}
-			});  
+			updateJSON()  
 		}
+		return data.ip
 	});
 }
 
@@ -173,4 +209,13 @@ function Search(query){
 		
 
 	}
+}
+
+function getFormObj(formId) {
+    var formObj = {};
+    var inputs = $('#'+formId).serializeArray();
+    $.each(inputs, function (i, input) {
+        formObj[input.name] = input.value;
+    });
+    return formObj;
 }

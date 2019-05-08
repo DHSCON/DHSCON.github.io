@@ -3,14 +3,20 @@ function Club(name, title, description, tagsArray){
 	this.title = title
 	this.description = description;
 	this.tags = tagsArray;
-	clubs.pages.push(this);
+}
+
+function Email(title, emailForm){
+	this.title = title;
+	this.emailForm = emailForm;
+}
+
+function addClub(name, title, description, tagsArray){
+	clubs.pages.push(new Club(name, title, description, tagsArray));
 	updateJSON()
 }
 
 function addEmail(title, emailForm){
-	this.title = title;
-	this.emailForm = emailForm
-	clubs.email.push(this);
+	clubs.email.push(new Email(title, emailForm));
 	updateJSON()
 }
 
