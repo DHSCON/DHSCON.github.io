@@ -5,8 +5,9 @@ function Club(name, title, description, tagsArray){
 	this.tags = tagsArray;
 }
 
-function Email(title, emailForm){
+function Email(title, name, emailForm){
 	this.title = title;
+	this.name = name;
 	this.emailForm = emailForm;
 }
 

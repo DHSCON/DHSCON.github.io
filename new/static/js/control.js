@@ -118,7 +118,7 @@ function sendEmail(){
 	
 	console.log(emailDetails)
 	let service_id = "default_service";
-	emailjs.send(service_id, template_id, emailDetails);
+	//emailjs.send(service_id, template_id, emailDetails);
 	$("#dialog").dialog("open");
 }
 
