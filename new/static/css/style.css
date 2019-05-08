@@ -356,8 +356,16 @@ overflow:hidden;
 border-style: solid;
 border-color: #000000;
 border-radius: 5px;
-background-color: #c6cad1;
+background-color: #c9cdd8;
 width: 300px;
+}
+.newsImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 20%;
+background: #ffffff00;
+
 }
 table {
     display: table;
