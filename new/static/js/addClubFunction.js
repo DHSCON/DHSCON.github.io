@@ -5,9 +5,8 @@ function Club(name, title, description, tagsArray){
 	this.tags = tagsArray;
 }
 
-function Email(title, name, emailForm){
+function Email(title, emailForm){
 	this.title = title;
-	this.name = name;
 	this.emailForm = emailForm;
 }
 
@@ -16,19 +15,8 @@ function addClub(name, title, description, tagsArray){
 	updateJSON()
 }
 
-function addEmail(title, name, emailForm){
-	clubs.email.push(new Email(title, name, emailForm));
-	updateJSON()
-}
-
-function Teacher(lastName, Email, clubsArr){
-	this.lastName = lastName;
-	this.email = Email;
-	this.clubsArr = clubsArr;
-}
-
-function addTeacher(lastName, Email, clubsArr){
-	clubs.teachers.push(new Teacher(lastName, Email, clubsArr));
+function addEmail(title, emailForm){
+	clubs.email.push(new Email(title, emailForm));
 	updateJSON()
 }
 
