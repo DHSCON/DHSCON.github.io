@@ -415,6 +415,11 @@ th {
 	width:115px;
 }
 
+#email select{
+	float:right;
+	width:115px;
+}
+
 #email textarea{
 	float:right;
 	width:115px;

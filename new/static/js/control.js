@@ -90,14 +90,11 @@ function start(club){
 function fillEmail(email){
 	$("#ClubName").text(email.name);
 	$("#email").prepend(email.emailForm);
-	/* if(subj=="teacher"){
+	if(subj=="teacher"){
 		for(let i=0; i<clubs.teachers.length; i++){
-			$('#mySelect').append($('<option>', { 
-				value: teachers[i].email,
-				text : teachers[i].lastName
-			}));
+			$("#email select").append(`<option value="${clubs.teachers[i].email}">${clubs.teachers[i].lastName}</option>`)
 		}
-	} */
+	} 
 	
 	
 }
@@ -109,7 +106,7 @@ function findEmail(email){
 function sendEmail(){
 	
 	let emailDetails = getFormObj("email")
-	emailDetails.timestamp = new Date();
+	emailDetails.timestamp = new Date().toString();
 	let template_id
 	
 	switch(subj){
@@ -121,14 +118,16 @@ function sendEmail(){
 			emailDetails.title = emailDetails.title.split(' ').join('+');
 			break;
 		case "teacher":
+			template_id = "default"
 			break
 		case "default":
+			emailDetails.teacher = "dcon.thoth@gmail.com";
 			template_id = "default"
 	}
 	
 	console.log(emailDetails)
 	let service_id = "default_service";
-	//emailjs.send(service_id, template_id, emailDetails);
+	emailjs.send(service_id, template_id, emailDetails);
 	if(confirm("Your email has been sent.\nThank you for contributing to the Dover Community Outreach Network.\nWould you like to go back?")){
 		history.go(-1);
 	}
@@ -230,4 +229,14 @@ function getFormObj(formId) {
         formObj[input.name] = input.value;
     });
     return formObj;
+}
+
+function sorting(json_object, key_to_sort_by) {
+    function sortByKey(a, b) {
+        var x = a[key_to_sort_by];
+        var y = b[key_to_sort_by];
+        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+    }
+
+    json_object.sort(sortByKey);
 }
