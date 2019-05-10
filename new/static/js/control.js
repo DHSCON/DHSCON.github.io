@@ -9,6 +9,7 @@ $(document).ready(function(){
 	$.get("	https://api.myjson.com/bins/xqszu", function(data, textStatus, jqXHR) {
 		//sets clubs as the response
 		clubs = data;
+		console.log(data)
 		//page as the url parameter
 		page = getUrlParameter("page");
 		if(page===undefined){
