@@ -1,0 +1,469 @@
+body {
+	background-image: linear-gradient(green, white);
+	background-repeat: repeat-x
+}
+h1 {
+	font-family: verdana;
+	font-size: 62px;
+	color: white;
+	margin: auto;
+	padding-top: 100px;
+	padding-left: 50px;
+}
+
+.pagebackground {
+	position: relative;
+	width: 100%;
+	min-width: 1025px;
+	margin: auto;
+	height: 100%;
+}
+
+.header {
+	background-image: url("../media/waveyBoi.png");
+	margin: auto -30px;
+	top: -200px;
+	bottom: 0px;
+	position: relative;
+	width: 1050px;
+	height: 418px;
+}
+
+.textfield {
+	background-color: #d6d6d6;
+	margin: auto;
+	top: 200px;
+	bottom: 200px;
+	width: 1000px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	border: 5px solid #000000;
+	border-bottom: 0px;
+	border-radius: 10px;
+}
+
+.navigation {
+	position: fixed;
+	background-color: #999999;
+	margin: 25px;
+	top: -200px;
+	bottom: 25px;
+	width: 950px;
+	position: relative;
+	height: 50px;
+	border: 0px;
+	border-radius: 5px;
+}
+
+.content {
+	margin: auto;
+	width: 950px;
+	top: -200px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-height: 100px;
+	border: 0px;
+}
+
+#ClubName {
+	color: green;
+	text-align: center;
+	font-family: verdana;
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: -5px;
+}
+
+#Description {
+	color: green;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: arial;
+}
+
+#earthActionMeetingImg {
+	width:500px;
+	display: block;
+	height:500px;
+	align-content: center;
+	margin: auto;
+	margin-left: auto;
+  	margin-right: auto;
+	text-align: center
+	
+}
+
+.bwmod1 {
+	width: 99.5%
+}
+.bwmod2 {
+	width: 99.7%
+}
+.bwmod3 {
+	width: 101%
+}
+.bwmod4 {
+	width: 88%;
+}
+
+.clublink {
+	margin: auto;
+	height: 45px;
+	word-wrap: break-word;
+	font-weight: 900;
+	color: green;
+	width: 100%;
+	background-color: #eee;
+	border: 2px;
+	border-radius: 6px;
+}
+
+.clublink:hover {
+	margin: auto;
+	height: 45px;
+	word-wrap: break-word;
+	font-weight: 900;
+	color: green;
+	width: 100%;
+	background-color: #eee;
+	border: 2px;
+	border-radius: 6px 6px 0px 0px;
+}
+
+
+.clublink:hover .clublink-content {
+	display: block;
+	font-weight: 900;
+	word-wrap: break-word;
+	border-radius: 0px;
+}
+
+.clubsubcategory {
+	margin: auto;
+	height: 45px;
+	word-wrap: break-word;
+	font-weight: 900;
+	color: green;
+	background-color: #eee;
+	border: 2px;
+	border-radius: 0px;
+}
+.clubsubcategory:hover {
+	margin: auto;
+	height: 45px;
+	word-wrap: break-word;
+	font-weight: 900;
+	color: #eee;
+	background-color: green;
+	border: 2px;
+	border-radius: 0px;
+}
+
+.clubsearchcategory {
+	margin: auto;
+	height: 45px;
+	word-wrap: break-word;
+	font-weight: 900;
+	color: green;
+	background-color: #eee;
+	border: 2px;
+	border-radius: 0px;
+}
+.clubsearchcategory:hover {
+	margin: auto;
+	height: 45px;
+	word-wrap: break-word;
+	font-weight: 900;
+	color: #eee;
+	background-color: green;
+	border: 2px;
+	border-radius: 0px;
+}
+
+.clubbottomcategory {
+	margin: auto;
+	height: 45px;
+	word-wrap: break-word;
+	font-weight: 900;
+	color: green;
+	background-color: #eee;
+	border: 2px;
+	border-radius: 0px 0px 6px 6px;
+}
+.clubbottomcategory:hover {
+	margin: auto;
+	height: 45px;
+	word-wrap: break-word;
+	font-weight: 900;
+	color: #eee;
+	background-color: green;
+	border: 2px;
+	border-radius: 0px 0px 6px 6px;
+}
+
+.clubtopcategory {
+	margin: auto;
+	height: 45px;
+	word-wrap: break-word;
+	font-weight: 900;
+	color: green;
+	background-color: #eee;
+	border: 2px;
+	border-radius: 6px 6px 0px 0px;
+}
+.clubtopcategory:hover {
+	margin: auto;
+	height: 45px;
+	word-wrap: break-word;
+	font-weight: 900;
+	color: #eee;
+	background-color: green;
+	border: 2px;
+	border-radius: 6px 6px 0px 0px;
+}
+
+.clublink-content {
+	display: none;
+	position: absolute;
+	top: 47px;
+	width: 16.25%;
+	z-index: 1;
+	font-weight: 900;
+	border-radius: 0px;
+}
+
+.clublink:hover{
+	color: white;
+	background-color: green;
+}
+
+.clublink:onclick .clublink{
+	display: none;
+	color: white;
+	background-color: green;
+}
+
+
+.clubsublink {
+	margin: auto;
+	height: 45px;
+	font-size: 1em;
+	word-wrap: break-word;
+	font-weight: 900;
+	color: green;
+	width: 100%;
+	background-color: #ddd;
+	border: 2px;
+	border: 0 none !important;
+	position: relative;
+	border-radius: 0px 0px 6px 6px;
+}
+
+.clublink-subcontent {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	border: 0px solid;
+	z-index: 1;
+	font-weight: 900;
+	word-wrap: break-word;
+	border-radius: 6px;
+}
+
+.clubsublink:hover {
+	background-color: green;
+	color: white;
+	font-weight: 900;
+	word-wrap: break-word;
+}
+
+.clubsublink:hover .clublink-subcontent {
+	background-color: #ffffff;
+	color: white;
+	display: block;
+	font-weight: 900;
+	word-wrap: break-word;
+}
+
+.clubButtonsSmall {
+	padding: 14px;
+	margin: auto;
+	border-radius: 4px;
+	font-family: arial;
+	font-size: 13px;
+}
+.clubButtonsBig {
+	padding: 5px;
+	margin: auto;
+	border-radius: 4px;
+	font-family: arial;
+	font-size: 13px;
+}
+
+a:link {
+	text-decoration: none;
+	color: green;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+.footerA {
+	background-color: green;
+	height: 150px;
+	width: 1020px;
+	margin: auto -10px;
+	border: 0px;
+	border-radius: 10px;
+}
+
+.footerB {
+	background-color: darkgreen;
+	height: 15px;
+	width: 1020px;
+	position: relative;
+	margin: auto;
+	border: 0px;
+	border-radius: 10px;
+}
+
+.footerC {
+	background-color: #d6d6d6;
+	height: 10px;
+	width: 1000px;
+	margin: auto;
+	border: 0px;
+	position: relative;
+	border: 0px;
+	border-radius: 0px 0px 5px 5px;
+}
+.footerText{
+	float: left;
+	text-align: inherit;
+	padding: 20px;
+	padding-top: 45px; 
+	font-size: 15px; 
+	color: white;
+}
+
+#socialmedia {
+	position: relative;
+	float: right;
+	padding: 20px;
+  font-size: 40px;
+  width: 50px;
+	color: white;
+	transition: 1s;
+
+}
+#socialmedia:hover {
+	position: relative;
+	float: right;
+	padding: 20px;
+  font-size: 40px;
+  width: 50px;
+	color: grey;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+#search{
+	height: 90%;
+	width: 60%;
+}
+#submit{
+	height:100%;
+	width:30%;
+}
+#getText{
+	visibility: hidden;
+}
+#ucBanner{
+	width:900px;
+	height:333px;
+	margin: auto;
+}
+.result{
+	margin:1em;
+}
+.searchDes{
+	margin-left: 2em;
+	font-size: 1em;
+}
+.news{
+	border: none;
+	overflow:hidden;
+}
+.news2{
+	border-style: solid;
+	border-color: #000000;
+	border-radius: 5px;
+	background-color: #c6cad1;
+	width: 300px;
+	float: right;
+	
+}
+.newsImg{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+
+
+}
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+	background-color: #d6d6d6;
+	border-width: 4px;
+}
+.newsheader{
+	text-align: center;
+	background: rgb(214, 214, 214);
+	margin: 7px;
+	font-size: 20px;
+	border-radius: 2px;
+}
+
+th {
+  font-weight: bold;
+	text-align: -internal-center;
+	background-color: #d6d6d6;
+	border-width: 4px;
+}
+
+::placeholder {
+	color: #bbb;
+}
+
+.searchpad {
+	padding: 10px;
+	height: 30px;
+}
+
+#email select{
+	float:right;
+	width:115px;
+}
+
+#email textarea{
+	float:right;
+	width:115px;
+
+.searchpad:hover {
+	height: 30px;
+}
