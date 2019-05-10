@@ -359,7 +359,7 @@ a:active {
 	color: white;
 }
 
-#socialmedia {
+#socialmediay {
 	position: relative;
 	float: right;
 	padding: 20px;
@@ -367,17 +367,73 @@ a:active {
   width: 50px;
 	color: white;
 	transition: 1s;
-
 }
-#socialmedia:hover {
+#socialmediat {
 	position: relative;
 	float: right;
 	padding: 20px;
   font-size: 40px;
   width: 50px;
-	color: grey;
+	color: white;
+	transition: 1s;
+}
+#socialmediaf {
+	position: relative;
+	float: right;
+	padding: 20px;
+  font-size: 40px;
+  width: 50px;
+	color: white;
+	transition: 1s;
+}
+#socialmediai {
+	position: relative;
+	float: right;
+	padding: 20px;
+  font-size: 40px;
+  width: 50px;
+	color: white;
+	transition: 1s;
+}
+#socialmediay:hover {
+	position: relative;
+	float: right;
+	padding: 20px;
+  font-size: 40px;
+  width: 50px;
+	color: rgb(252, 0, 0);
 	cursor: pointer;
-	transition: 0.5s;
+	transition: 0.3s;
+}
+#socialmediaf:hover {
+	position: relative;
+	float: right;
+	padding: 20px;
+  font-size: 40px;
+  width: 50px;
+	color: rgb(59, 89, 152);
+	cursor: pointer;
+	transition: 0.3s;
+}
+#socialmediat:hover {
+	position: relative;
+	float: right;
+	padding: 20px;
+  font-size: 40px;
+  width: 50px;
+	color: rgb(29, 161, 242);
+	cursor: pointer;
+	transition: 0.3s;
+}
+#socialmediai:hover {
+	position: relative;
+	float: right;
+	padding: 20px;
+  font-size: 40px;
+  width: 50px;
+	color: rgb(193,53,132);
+	cursor: pointer;
+	transition: 0.3s;
 }
 
 #search{
