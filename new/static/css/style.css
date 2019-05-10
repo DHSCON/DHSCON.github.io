@@ -71,15 +71,16 @@ h1 {
 	color: green;
 	text-align: center;
 	font-family: verdana;
-	font-size: 30;
+	font-size: 25px;
 	font-weight: bold;
+	margin-top: -5px;
 }
 
 #Description {
 	color: green;
-	font-size: 30;
+	font-size: 16px;
 	font-weight: bold;
-	font-family: times new roman;
+	font-family: arial;
 }
 
 #earthActionMeetingImg {
@@ -92,6 +93,19 @@ h1 {
   	margin-right: auto;
 	text-align: center
 	
+}
+
+.bwmod1 {
+	width: 99.5%
+}
+.bwmod2 {
+	width: 99.7%
+}
+.bwmod3 {
+	width: 101%
+}
+.bwmod4 {
+	width: 88%;
 }
 
 .clublink {
@@ -132,7 +146,6 @@ h1 {
 	word-wrap: break-word;
 	font-weight: 900;
 	color: green;
-	width: 99.5%;
 	background-color: #eee;
 	border: 2px;
 	border-radius: 0px;
@@ -143,9 +156,30 @@ h1 {
 	word-wrap: break-word;
 	font-weight: 900;
 	color: #eee;
-	width: 99.5%;
 	background-color: green;
 	border: 2px;
+	border-radius: 0px;
+}
+
+.clubsearchcategory {
+	margin: auto;
+	height: 45px;
+	word-wrap: break-word;
+	font-weight: 900;
+	color: green;
+	background-color: #eee;
+	border: 2px;
+	border-radius: 0px;
+}
+.clubsearchcategory:hover {
+	margin: auto;
+	height: 45px;
+	word-wrap: break-word;
+	font-weight: 900;
+	color: #eee;
+	background-color: green;
+	border: 2px;
+	border-radius: 0px;
 }
 
 .clubbottomcategory {
@@ -154,7 +188,6 @@ h1 {
 	word-wrap: break-word;
 	font-weight: 900;
 	color: green;
-	width: 99%;
 	background-color: #eee;
 	border: 2px;
 	border-radius: 0px 0px 6px 6px;
@@ -165,9 +198,30 @@ h1 {
 	word-wrap: break-word;
 	font-weight: 900;
 	color: #eee;
-	width: 99%;
 	background-color: green;
 	border: 2px;
+	border-radius: 0px 0px 6px 6px;
+}
+
+.clubtopcategory {
+	margin: auto;
+	height: 45px;
+	word-wrap: break-word;
+	font-weight: 900;
+	color: green;
+	background-color: #eee;
+	border: 2px;
+	border-radius: 6px 6px 0px 0px;
+}
+.clubtopcategory:hover {
+	margin: auto;
+	height: 45px;
+	word-wrap: break-word;
+	font-weight: 900;
+	color: #eee;
+	background-color: green;
+	border: 2px;
+	border-radius: 6px 6px 0px 0px;
 }
 
 .clublink-content {
@@ -204,6 +258,7 @@ h1 {
 	border: 2px;
 	border: 0 none !important;
 	position: relative;
+	border-radius: 0px 0px 6px 6px;
 }
 
 .clublink-subcontent {
@@ -212,11 +267,11 @@ h1 {
 	top: 0;
 	left: 100%;
 	width: 100%;
-	border: 4px solid;
+	border: 0px solid;
 	z-index: 1;
-	border-color: green;
 	font-weight: 900;
 	word-wrap: break-word;
+	border-radius: 6px;
 }
 
 .clubsublink:hover {
@@ -349,70 +404,55 @@ a:active {
 	font-size: 1em;
 }
 .news{
-border: none;
-overflow:hidden;
+	border: none;
+	overflow:hidden;
 }
 .news2{
-border-style: solid;
-border-color: #000000;
-border-radius: 5px;
-background-color: #c9cdd8;
-width: 300px;
+	border-style: solid;
+	border-color: #000000;
+	border-radius: 5px;
+	background-color: #c6cad1;
+	width: 300px;
+	float: right;
+	
 }
 .newsImg{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	width: 20%;
-background: #ffffff00;
+
 
 }
 table {
-    display: table;
-    border-collapse: separate;
-    border-spacing: 2px;
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
 	background-color: #d6d6d6;
 	border-width: 4px;
 }
 .newsheader{
-text-align: center;
-background: rgb(214, 214, 214);
-margin: 7px;
-font-size: 20px;
-border-radius: 2px;
+	text-align: center;
+	background: rgb(214, 214, 214);
+	margin: 7px;
+	font-size: 20px;
+	border-radius: 2px;
 }
 
 th {
-    font-weight: bold;
+  font-weight: bold;
 	text-align: -internal-center;
 	background-color: #d6d6d6;
 	border-width: 4px;
 }
 
-#email{
-	width:250px;
-	margin: auto;
+::placeholder {
+	color: #bbb;
 }
 
-#email h3{
-	text-align: center;
-}
-
-#email .input{
-	height: 25px;
-}
-
-#containForm{
-	overflow: auto; 
-}
-
-#email span{
-	float:left;
-}
-
-#email input{
-	float:right;
-	width:115px;
+.searchpad {
+	padding: 10px;
+	height: 30px;
 }
 
 #email select{
@@ -423,4 +463,7 @@ th {
 #email textarea{
 	float:right;
 	width:115px;
+
+.searchpad:hover {
+	height: 30px;
 }

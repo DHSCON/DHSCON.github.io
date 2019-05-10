@@ -12,9 +12,6 @@ $(document).ready(function(){
 		console.log(data)
 		//page as the url parameter
 		page = getUrlParameter("page");
-		if(page===undefined){
-			page = "dconHome"
-		}
 		//calls the start function for the club with the name that matches page
 		start(clubs.pages[clubs.pages.findIndex(findClub)]);
 		getIP()
@@ -89,7 +86,6 @@ function start(club){
 }
 
 function fillEmail(email){
-	$("#ClubName").text(email.name);
 	$("#email").prepend(email.emailForm);
 	if(subj=="teacher"){
 		for(let i=0; i<clubs.teachers.length; i++){
@@ -97,6 +93,7 @@ function fillEmail(email){
 		}
 	} 
 	
+
 	
 }
 
@@ -108,6 +105,7 @@ function sendEmail(){
 	
 	let emailDetails = getFormObj("email")
 	emailDetails.timestamp = new Date().toString();
+
 	let template_id
 	
 	switch(subj){
@@ -124,6 +122,7 @@ function sendEmail(){
 		case "default":
 			emailDetails.teacher = "dcon.thoth@gmail.com";
 			template_id = "default"
+			break
 	}
 	
 	console.log(emailDetails)
