@@ -16,20 +16,6 @@ $(document).ready(function(){
 		start(clubs.pages[clubs.pages.findIndex(findClub)]);
 		getIP()
 	});
-	
-	//rickroll
-	x = 0;
-	$('#Description').click(function(){
-		if(page=="dconHome"){
-			x+=.1;
-			$('.content').css({"transform":`rotate(${x}deg)`})
-				if(x >= 2){
-					window.open("https://www.youtube.com/watch?v=oHg5SJYRHA0")
-					x = 0
-					$('.content').css({"transform":`rotate(${x}deg)`})
-				}
-		}
-	});
 });
 
 //function that strips html from a string
