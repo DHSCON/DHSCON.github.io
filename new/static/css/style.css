@@ -413,6 +413,16 @@ a:active {
 	border-radius: 5px;
 	background-color: #c6cad1;
 	width: 300px;
+	float: right;
+	
+}
+.newsImg{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+
+
 }
 table {
   display: table;
