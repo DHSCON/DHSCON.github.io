@@ -359,6 +359,10 @@ a:active {
 	color: white;
 }
 
+.footerText a{
+	color: white;
+}
+
 #socialmediay {
 	position: relative;
 	float: right;
@@ -511,6 +515,24 @@ th {
 	height: 30px;
 }
 
+#email{
+	margin:auto;
+	width: 300px;
+}
+
+#email #containForm{
+	overflow: auto;
+}
+
+#email .input{
+	min-height:25px;
+}
+
+#email input{
+	float:right;
+	width:115px;
+}
+
 #email select{
 	float:right;
 	width:115px;
@@ -519,7 +541,7 @@ th {
 #email textarea{
 	float:right;
 	width:115px;
-
+}
 .searchpad:hover {
 	height: 30px;
 }
